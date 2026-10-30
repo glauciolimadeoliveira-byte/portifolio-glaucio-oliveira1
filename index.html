@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional | Gláucio Juscelino</title>
+    <!-- Link de conexão com o arquivo externo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme"> <!-- O site é iniciado por padrão no modo escuro -->
+
+    <!-- Menu de navegação superior fixo exigido pelos critérios do trabalho -->
+    <header class="navbar">
+        <div class="logo">Gláucio Juscelino</div>
+        <nav>
+            <ul class="nav-links">
+                <!-- Âncoras que realizam a navegação interna na Single Page Website -->
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Botão dinâmico controlado por JavaScript para alteração visual do tema -->
+        <button id="theme-toggle" class="btn-theme">☀️ Modo Claro</button>
+    </header>
+
+    <!-- Estrutura principal contendo as seções de conteúdo obrigatórias -->
+    <main class="container">
+
+        <!-- Seção 1: Sobre Mim -->
+        <section id="sobre" class="card-section">
+            <h1>Sobre Mim</h1>
+            <p>Olá! Meu nome é <strong>Gláucio Juscelino Lima de Oliveira</strong> e sou estudante do curso de Tecnologia em Desenvolvimento Mobile na UNINTER.</p>
+            <p>Sou apaixonado por tecnologia e focado em aprender a criar soluções de software eficientes, funcionais e com ótimas experiências para o usuário. No meu tempo livre, gosto muito de ler livros e praticar esportes. Utilizo este espaço para expor minha evolução acadêmica e os conceitos práticos de programação front-end que venho dominando.</p>
+        </section>
+
+        <!-- Seção 2: Formação -->
+        <section id="formacao" class="card-section">
+            <h2>Formação Acadêmica e Idiomas</h2>
+            <div class="curso-item">
+                <h3>Tecnologia em Desenvolvimento Mobile</h3>
+                <p><em>UNINTER (Centro Universitário Internacional)</em> | Em andamento</p>
+            </div>
+            <div class="curso-item">
+                <h3>Desenvolvimento Web e Fundamentos de Interface</h3>
+                <p><em>Formação Complementar Focada em Front-End</em> | Concluído em 2026</p>
+            </div>
+            <div class="curso-item">
+                <h3>Idiomas</h3>
+                <p>Português (Nativo) | Inglês (Intermediário)</p>
+            </div>
+        </section>
+
+        <!-- Seção 3: Portfólio -->
+        <section id="portfolio" class="card-section">
+            <h2>Meus Projetos (Mobile & Web)</h2>
+            <p>Abaixo estão listados alguns projetos conceituais voltados para o ecossistema móvel e arquitetura de software:</p>
+            <div class="grid-projetos">
+                <!-- Card de Projeto 1 -->
+                <div class="projeto-box">
+                    <h3>Projeto 1: App TaskFlow</h3>
+                    <p>Protótipo conceitual de um aplicativo mobile para gerenciamento de tarefas cotidianas e produtividade pessoal.</p>
+                    <a href="https://github.com" target="_blank">Ver no GitHub</a>
+                </div>
+                <!-- Card de Projeto 2 -->
+                <div class="projeto-box">
+                    <h3>Projeto 2: Layout de Currículo Web</h3>
+                    <p>Esta exata página de portfólio online desenvolvida de forma responsiva utilizando apenas HTML5 e CSS3 puro.</p>
+                    <a href="https://github.com" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Contato -->
+        <section id="contato" class="card-section">
+            <h2>Entre em Contato</h2>
+            <!-- Formulário estruturado com IDs limpos para manipulação do script de validação -->
+            <form id="meu-formulario" novalidate>
+                <div class="campo-grupo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                </div>
+                <div class="campo-grupo">
+                    <label for="email">E-mail Profissional:</label>
+                    <input type="email" id="email" placeholder="glauciolimadeoliveira@gmail.com">
+                </div>
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem acadêmica ou profissional aqui..."></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé estruturado informando a autoria e contexto institucional -->
+    <footer class="rodape">
+        <p>&copy; 2026 Gláucio Juscelino Lima de Oliveira - Atividade Prática UNINTER.</p>
+    </footer>
+
+    <!-- Importação da lógica de controle JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
